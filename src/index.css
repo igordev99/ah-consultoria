@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* HSL Color System */
+  --hue-purple: 276;
+  --hue-pink: 343;
+  
+  /* Light Theme Variables */
+  --primary: HSL(var(--hue-purple), 47%, 37%);
+  --primary-light: HSL(var(--hue-purple), 50%, 47%);
+  --primary-dark: HSL(var(--hue-purple), 60%, 25%);
+  --primary-glow: rgba(103, 50, 138, 0.15);
+  
+  --accent: HSL(var(--hue-pink), 89%, 53%); /* #F31A56 */
+  --accent-hover: HSL(var(--hue-pink), 95%, 45%);
+  --accent-glow: rgba(243, 26, 86, 0.25);
+  
+  --bg: HSL(220, 20%, 97%);
+  --bg-gradient: linear-gradient(135deg, HSL(220, 20%, 97%) 0%, HSL(220, 15%, 93%) 100%);
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --card-border: rgba(255, 255, 255, 0.6);
+  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.02);
+  
+  --text: HSL(220, 15%, 15%);
+  --text-muted: HSL(220, 10%, 45%);
+  --text-inverse: HSL(0, 0%, 100%);
+  
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --border: rgba(0, 0, 0, 0.08);
+  --footer-bg: HSL(220, 12%, 92%);
+  
+  --font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --border-radius-lg: 24px;
+  --border-radius-md: 16px;
+  --border-radius-sm: 8px;
+}
+
+/* Dark Theme Variables overriding Light Theme */
+body.dark {
+  --primary: HSL(var(--hue-purple), 65%, 50%);
+  --primary-light: HSL(var(--hue-purple), 70%, 60%);
+  --primary-dark: HSL(var(--hue-purple), 60%, 40%);
+  --primary-glow: rgba(168, 85, 247, 0.2);
+  
+  --accent: HSL(var(--hue-pink), 89%, 58%);
+  --accent-hover: HSL(var(--hue-pink), 95%, 50%);
+  --accent-glow: rgba(243, 26, 86, 0.45);
+  
+  --bg: HSL(225, 25%, 8%);
+  --bg-gradient: linear-gradient(135deg, HSL(225, 25%, 8%) 0%, HSL(225, 30%, 4%) 100%);
+  --card-bg: rgba(20, 22, 33, 0.7);
+  --card-border: rgba(255, 255, 255, 0.05);
+  --card-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(255, 255, 255, 0.02);
+  
+  --text: HSL(220, 15%, 92%);
+  --text-muted: HSL(220, 10%, 65%);
+  
+  --header-bg: rgba(20, 22, 33, 0.75);
+  --border: rgba(255, 255, 255, 0.08);
+  --footer-bg: HSL(225, 30%, 4%);
+}
+
+/* Reset CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--bg-gradient);
+  color: var(--text);
+  line-height: 1.6;
+  transition: var(--transition);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: var(--transition);
+}
+
+/* Layout Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius-lg);
+  transition: var(--transition);
+}
+
+.glass-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.12);
+  border-color: rgba(var(--hue-purple), 47%, 50%, 0.2);
+}
+
+body.dark .glass-panel:hover {
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.6);
+  border-color: rgba(168, 85, 247, 0.15);
+}
+
+/* Titles and Typography */
+h1, h2, h3, h4 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.8px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  letter-spacing: -0.4px;
+}
+
+p.lead {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: var(--transition);
+  gap: 10px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  color: var(--text-inverse);
+  box-shadow: 0 10px 25px -10px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 30px -8px var(--accent-glow);
+}
+
+.btn-secondary {
+  background: var(--primary-glow);
+  color: var(--primary);
+  border: 1px solid rgba(103, 50, 138, 0.25);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--text-inverse);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px -10px var(--primary-glow);
+}
+
+/* Grids */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Micro-animations and Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  background: var(--primary-glow);
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.badge-accent {
+  background: var(--accent-glow);
+  color: var(--accent);
+}
