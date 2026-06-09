@@ -93,6 +93,12 @@
   gap: 16px;
 }
 
+@media (min-width: 992px) {
+  .header-actions {
+    display: none;
+  }
+}
+
 .theme-toggle {
   display: flex;
   align-items: center;
