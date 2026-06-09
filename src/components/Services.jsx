@@ -182,7 +182,7 @@ export default function Services() {
             <div className="cta-content">
               <h3>Pronto para reestruturar sua operação e escala?</h3>
               <p>
-                Os projetos de mapeamento completo de departamentos envolvem uma análise de escopo detalhada para a sua realidade. Eles são contratados exclusivamente após uma Reunião Estratégica Comercial individual.
+                Os projetos de mapeamento completo de departamentos envolvem uma análise de escopo detalhada para a sua realidade. Eles são contratados exclusivamente após uma <strong>Reunião Estratégica Comercial individual.</strong>
               </p>
             </div>
             <div className="cta-action">
