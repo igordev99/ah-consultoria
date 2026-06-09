@@ -6,20 +6,24 @@ export default function Faq() {
 
   const faqs = [
     {
-      question: "A consultoria se adapta a escritórios pequenos?",
-      answer: "Sim! Focamos na estruturação de processos essenciais e ferramentas de ponta para permitir o crescimento escalável e organizado de qualquer tamanho de operação contábil."
+      question: "Como funciona a Sessão de Diagnóstico?",
+      answer: "A Sessão de Diagnóstico é um atendimento individual e ao vivo de 1h30 via videoconferência. Analisamos detalhadamente os fluxos, gargalos operacionais e o ecossistema de ferramentas do seu escritório. Com base nisso, elaboramos e entregamos um relatório PDF estratégico contendo o mapeamento de gargalos e o roadmap recomendado para implantação de IAs e automações de processos."
     },
     {
       question: "O pagamento é seguro?",
-      answer: "Totalmente seguro. Nós utilizamos o checkout oficial da Safe2Pay, que oferece processamento blindado de pagamentos com criptografia ponta a ponta e total conformidade de segurança."
+      answer: "Sim, totalmente seguro. O processamento de pagamentos é feito de forma blindada pela plataforma da Safe2Pay, com criptografia de ponta a ponta. Você pode realizar o pagamento no cartão de crédito em até 12x, PIX ou boleto."
     },
     {
-      question: "Quanto tempo leva a implementação?",
-      answer: "Para os planos de Mapeamento, as 12 horas de sessões são distribuídas estrategicamente de acordo com nossa agenda e a disponibilidade do seu escritório, geralmente concluindo o mapeamento completo em até 30 dias de acompanhamento."
+      question: "Quanto tempo leva para receber o relatório PDF?",
+      answer: "A sessão ao vivo é agendada conforme a sua disponibilidade de agenda. Após a realização da videoconferência, nosso time de especialistas desenvolve o plano personalizado e entrega o relatório PDF finalizado em até 7 dias úteis."
     },
     {
-      question: "Existe suporte após o mapeamento?",
-      answer: "Sim. Ao final do processo, entregamos todo o fluxo mapeado e garantimos uma reunião de revisão final dedicada para sanar dúvidas e orientar sua equipe sobre a execução prática do plano."
+      question: "Existe suporte pós-entrega do diagnóstico?",
+      answer: "Com certeza! Para garantir que você consiga dar os primeiros passos e tirar dúvidas sobre as sugestões apresentadas, você terá acesso a 7 dias de suporte exclusivo direto via WhatsApp após a entrega do seu relatório PDF."
+    },
+    {
+      question: "A consultoria e diagnóstico servem para escritórios pequenos?",
+      answer: "Sim! O diagnóstico de processos é desenhado sob medida para escritórios de qualquer tamanho. O objetivo principal é otimizar rotinas e eliminar o retrabalho manual do time para que a sua operação consiga escalar sem inflar a folha de pagamento."
     }
   ];
 
@@ -34,7 +38,7 @@ export default function Faq() {
           <span className="badge">Dúvidas Frequentes</span>
           <h2 className="faq-title">Perguntas <span className="text-gradient">Frequentes</span></h2>
           <p className="lead faq-subtitle">
-            Tire suas dúvidas rápidas sobre como funcionam os diagnósticos e mapeamentos de processos.
+            Tire suas dúvidas rápidas sobre como funciona a contratação e o agendamento da sua Sessão de Diagnóstico.
           </p>
         </div>
 

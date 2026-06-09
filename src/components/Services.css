@@ -7,129 +7,386 @@
   margin: 16px auto 0 auto;
 }
 
-.services-grid {
-  align-items: stretch;
+/* ==========================================================================
+   DIAGNOSTIC CONTAINER (R$ 997 FOCUSED PRODUCT)
+   ========================================================================== */
+.diagnostic-container {
+  padding: 48px;
+  text-align: left;
+  margin-bottom: 80px;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--accent);
+  box-shadow: 0 15px 40px -15px var(--accent-glow);
 }
 
-.service-card {
-  position: relative;
+.diagnostic-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+}
+
+.diagnostic-main-title {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin: 12px 0;
+}
+
+body.dark .diagnostic-main-title {
+  color: var(--text);
+}
+
+.diagnostic-main-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.diagnostic-deliverables h4 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.deliverables-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 24px 32px 24px;
-  height: 100%;
+  gap: 16px;
+  margin-bottom: 36px;
 }
 
-.popular-card {
-  border: 2px solid var(--accent);
-  box-shadow: 0 15px 35px -10px var(--accent-glow);
-  transform: scale(1.02);
-}
-
-.popular-card:hover {
-  transform: translateY(-8px) scale(1.04) !important;
-  box-shadow: 0 25px 45px -10px var(--accent-glow) !important;
-}
-
-.popular-badge {
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--accent);
-  color: var(--text-inverse);
-  padding: 6px 16px;
-  border-radius: 50px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 10px var(--accent-glow);
-  z-index: 5;
-}
-
-.service-card-title {
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin-bottom: 12px;
-  color: var(--primary);
-}
-
-.popular-card .service-card-title {
-  color: var(--accent);
-}
-
-.service-card-desc {
-  font-size: 0.9rem;
+.deliverables-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.5;
 }
 
-.service-features {
-  margin: 24px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 24px 0;
+.deliverables-list li strong {
+  color: var(--text);
 }
 
-.service-features ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.service-features li {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-align: left;
-}
-
-.check-icon {
-  width: 16px;
-  height: 16px;
+.deliverables-list .check-icon {
+  width: 20px;
+  height: 20px;
   color: var(--accent);
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
-.price-container {
+/* Pricing box */
+.diagnostic-pricing {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
+
+.pricing-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
 }
 
 .price-label {
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-weight: 700;
+  letter-spacing: 1px;
   color: var(--text-muted);
 }
 
 .price-value {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 900;
   color: var(--text);
-  margin-top: 4px;
-  line-height: 1.1;
+  line-height: 1;
+  margin: 4px 0;
 }
 
-.card-btn {
-  width: 100%;
-  padding: 14px 20px;
-  font-size: 0.95rem;
+.price-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
-/* Responsividade */
+.diagnostic-btn {
+  padding: 18px 36px;
+  font-size: 1.05rem;
+}
+
+/* Steps Timeline Column */
+.diagnostic-steps-col {
+  border-left: 1px solid var(--border);
+  padding-left: 48px;
+}
+
+.steps-title {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.steps-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+}
+
+.steps-timeline::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 2px;
+  height: calc(100% - 30px);
+  background: var(--border);
+  z-index: 1;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--text-inverse);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px var(--primary-glow);
+}
+
+.step-content h5 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.step-content p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   ADVANCED MAPPINGS SECTION (LEAD GENERATION)
+   ========================================================================== */
+.advanced-mappings-section {
+  margin-top: 100px;
+}
+
+.mappings-header {
+  margin-bottom: 50px;
+}
+
+.mappings-title {
+  font-size: 2.2rem;
+  margin: 12px 0;
+}
+
+.mappings-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mappings-grid {
+  margin-bottom: 48px;
+}
+
+.mapping-card {
+  padding: 40px 28px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-icon-container {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.card-icon-container.contabilidade {
+  background: rgba(103, 50, 138, 0.1);
+  color: var(--primary);
+}
+
+.card-icon-container.fiscal {
+  background: rgba(243, 26, 86, 0.1);
+  color: var(--accent);
+}
+
+.card-icon-container.legalizacao {
+  background: rgba(13, 148, 136, 0.1);
+  color: #0d9488;
+}
+
+.card-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.mapping-card-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.mapping-card-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  min-height: 44px;
+}
+
+.mapping-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.mapping-features li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 20px;
+}
+
+.mapping-features li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Call to Action Container at the bottom of Mappings */
+.mappings-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 48px;
+  text-align: left;
+  gap: 40px;
+  border: 1px solid var(--border);
+}
+
+.cta-content {
+  flex: 1;
+}
+
+.cta-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.cta-content p {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.cta-action {
+  flex-shrink: 0;
+}
+
+.cta-btn {
+  padding: 16px 32px;
+  font-size: 0.98rem;
+  background: #25d366;
+  box-shadow: 0 10px 25px -10px rgba(37, 211, 102, 0.4);
+}
+
+.cta-btn:hover {
+  background: #20ba56;
+  box-shadow: 0 15px 30px -8px rgba(37, 211, 102, 0.6);
+  transform: translateY(-3px) scale(1.02);
+}
+
+.btn-whatsapp-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================================================== */
 @media (max-width: 1024px) {
-  .popular-card {
-    transform: none;
+  .diagnostic-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
   
-  .popular-card:hover {
-    transform: translateY(-5px) !important;
+  .diagnostic-steps-col {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 32px;
+  }
+  
+  .mappings-cta-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 24px;
+  }
+  
+  .cta-action {
+    width: 100%;
+  }
+  
+  .cta-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .diagnostic-container {
+    padding: 24px;
+  }
+  
+  .diagnostic-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .diagnostic-pricing {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .diagnostic-btn {
+    width: 100%;
   }
 }
