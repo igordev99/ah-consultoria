@@ -61,7 +61,7 @@ export default function Services() {
                   <span className="price-sub">em até 12x no cartão de crédito</span>
                 </div>
                 <a 
-                  href="https://checkout.safe2pay.com.br/product?code=c2f91036-446b-4621-8692-40b11a1c39b5" 
+                  href="https://checkout.safe2pay.com.br/product?code=481712c0-e9c9-4844-a5ad-13cedda39b67" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn btn-primary diagnostic-btn"
