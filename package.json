@@ -1,7 +1,8 @@
 {
   "name": "ah-consultoria",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Landing Page de Consultoria de Anderson Hernandes focada em diagnóstico de processos e tecnologias de IA.",
   "type": "module",
   "scripts": {
     "dev": "vite",
