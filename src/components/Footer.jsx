@@ -52,8 +52,8 @@ export default function Footer() {
             <ul className="footer-contact-details">
               <li>
                 <span className="contact-label">WhatsApp:</span>
-                <a href="https://wa.me/5511921244033?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consultoria%20de%20processos!" target="_blank" rel="noopener noreferrer" className="contact-link whatsapp-contact">
-                  11 92124-4033
+                <a href="https://wa.me/5511981801650?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consultoria%20de%20processos!" target="_blank" rel="noopener noreferrer" className="contact-link whatsapp-contact">
+                  11 98180-1650
                 </a>
               </li>
               <li>

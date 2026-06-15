@@ -31,7 +31,7 @@ export default function Header() {
           <a href="#servicos" onClick={() => setMobileMenuOpen(false)}>Diagnósticos</a>
           <a href="#faq" onClick={() => setMobileMenuOpen(false)}>Perguntas Frequentes</a>
           <a 
-            href="https://wa.me/5511921244033?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consultoria%20de%20processos!" 
+            href="https://wa.me/5511981801650?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consultoria%20de%20processos!" 
             className="nav-contact-btn" 
             target="_blank" 
             rel="noopener noreferrer"

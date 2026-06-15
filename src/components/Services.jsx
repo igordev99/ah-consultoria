@@ -187,7 +187,7 @@ export default function Services() {
             </div>
             <div className="cta-action">
               <a 
-                href="https://wa.me/5511921244033?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20estrat%C3%A9gica%20para%20falar%20sobre%20o%20Mapeamento%20Completo%20de%20Departamentos!" 
+                href="https://wa.me/5511981801650?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20estrat%C3%A9gica%20para%20falar%20sobre%20o%20Mapeamento%20Completo%20de%20Departamentos!" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-primary cta-btn"

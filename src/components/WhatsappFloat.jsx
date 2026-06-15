@@ -2,7 +2,7 @@ import React from 'react';
 import './WhatsappFloat.css';
 
 export default function WhatsappFloat() {
-  const whatsappUrl = "https://wa.me/5511921244033?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consultoria%20de%20processos!";
+  const whatsappUrl = "https://wa.me/5511981801650?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consultoria%20de%20processos!";
 
   return (
     <a 
