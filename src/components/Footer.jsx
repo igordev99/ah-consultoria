@@ -36,6 +36,7 @@ export default function Footer() {
               <li><a href="#sobre">Sobre Anderson</a></li>
               <li><a href="#servicos">Diagnósticos</a></li>
               <li><a href="#faq">Dúvidas</a></li>
+              <li><a href="/blog/">Artigos &amp; Diagnósticos de Gestão Contábil</a></li>
             </ul>
           </div>
 
