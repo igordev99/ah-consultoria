@@ -1729,8 +1729,11 @@ Sitemap: ${SITE_URL}/sitemap.xml
 }
 
 function buildRedirects() {
-  return `# Cloudflare Pages: static HTML files in /blog/*, /sitemap.xml and /robots.txt are served natively with HTTP 200 before SPA fallback
-/* /index.html 200
+  return `# Cloudflare Pages / Workers Static Assets:
+# Static files (/blog/*, /sitemap.xml, /robots.txt, /assets/*) are served natively with HTTP 200.
+# Absence of 404.html enables native SPA fallback to /index.html only for unmatched routes without hijacking /blog/*.
+/artigos /blog/ 301
+/artigos/* /blog/:splat 301
 `;
 }
 
