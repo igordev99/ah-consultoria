@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "generate:seo": "node scripts/generate-seo-hub.mjs",
-    "build": "node scripts/generate-seo-hub.mjs && vite build",
+    "build": "node scripts/generate-seo-hub.mjs && vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender-home.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
