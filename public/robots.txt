@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://andersonhernandesconsult.com.br/sitemap.xml
+Sitemap: https://www.andersonhernandesconsult.com.br/sitemap.xml

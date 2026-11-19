@@ -8,12 +8,12 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
 const BLOG_DIR = path.join(PUBLIC_DIR, 'blog');
 
-const SITE_URL = 'https://andersonhernandesconsult.com.br';
+const SITE_URL = 'https://www.andersonhernandesconsult.com.br';
 const BRAND_NAME = 'Anderson Hernandes Consultoria';
 const AUTHOR_NAME = 'Anderson Hernandes';
 const WHATSAPP_URL = 'https://wa.me/5511981801650?text=Ol%C3%A1%2C%20vim%20pelo%20Dossi%C3%AA%20de%20Gest%C3%A3o%20Cont%C3%A1bil%20e%20gostaria%20de%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico!';
-const SERVICES_URL = 'https://andersonhernandesconsult.com.br/#servicos';
-const ABOUT_URL = 'https://andersonhernandesconsult.com.br/#sobre';
+const SERVICES_URL = 'https://www.andersonhernandesconsult.com.br/#servicos';
+const ABOUT_URL = 'https://www.andersonhernandesconsult.com.br/#sobre';
 const OG_IMAGE_URL = 'https://andersonhernandes.com.br/wp-content/uploads/2022/07/BG-WEB.jpg';
 const IAGENTIC_URL = 'https://iagentic.com.br';
 const IAGENTIC_PARTNER_URL = 'https://iagentic.com.br/parceiros/anderson-hernandes-consultoria';
