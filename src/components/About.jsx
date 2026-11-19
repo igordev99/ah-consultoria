@@ -9,8 +9,12 @@ export default function About() {
           <div className="about-image-wrapper">
             <div className="about-image-glow"></div>
             <img 
-              src="https://andersonhernandes.com.br/wp-content/uploads/2023/05/Foto-Camada-3-989x1024.png" 
+              src="/images/anderson-hernandes.webp" 
               alt="Anderson Hernandes" 
+              width="640"
+              height="663"
+              fetchPriority="high"
+              decoding="async"
               className="about-image"
             />
             <div className="about-experience-badge glass-panel">

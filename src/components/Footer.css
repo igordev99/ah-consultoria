@@ -24,11 +24,6 @@
   width: auto;
   object-fit: contain;
   align-self: flex-start;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-}
-
-body:not(.dark) .footer-logo {
-  filter: invert(0.8) contrast(2) brightness(0.2); /* Invert white logo for light footer */
 }
 
 .footer-brand-desc {
@@ -116,12 +111,12 @@ body:not(.dark) .footer-logo {
 }
 
 .whatsapp-contact {
-  color: #25d366;
+  color: #146c36;
   font-weight: 700;
 }
 
 .whatsapp-contact:hover {
-  color: #20ba56;
+  color: #0f5329;
 }
 
 .footer-iagentic-partner {

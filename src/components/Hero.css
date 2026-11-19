@@ -22,31 +22,28 @@
 .shape {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.15;
-  transition: var(--transition);
+  filter: blur(64px);
+  opacity: 0.14;
 }
 
 body.dark .shape {
-  opacity: 0.25;
+  opacity: 0.22;
 }
 
 .shape-1 {
   top: -10%;
   left: -10%;
-  width: 500px;
-  height: 500px;
+  width: 460px;
+  height: 460px;
   background: var(--primary-light);
-  animation: floatOrb 15s infinite alternate ease-in-out;
 }
 
 .shape-2 {
   bottom: -10%;
   right: -10%;
-  width: 600px;
-  height: 600px;
+  width: 520px;
+  height: 520px;
   background: var(--accent);
-  animation: floatOrb 20s infinite alternate-reverse ease-in-out;
 }
 
 .hero-container {
@@ -63,7 +60,6 @@ body.dark .shape {
   font-size: 4.2rem;
   line-height: 1.15;
   margin-bottom: 24px;
-  animation: fadeInUp 0.8s ease-out;
 }
 
 .hero-subtitle {
@@ -73,7 +69,6 @@ body.dark .shape {
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-  animation: fadeInUp 1s ease-out;
 }
 
 .hero-ctas {
@@ -81,70 +76,30 @@ body.dark .shape {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  animation: fadeInUp 1.2s ease-out;
 }
 
 .btn-icon {
   width: 18px;
   height: 18px;
-  animation: bounce 2s infinite;
-}
-
-/* Animations */
-@keyframes floatOrb {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-
-  100% {
-    transform: translate(50px, 30px) scale(1.15);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-4px);
-  }
-
-  60% {
-    transform: translateY(-2px);
-  }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+  .hero-background-shapes {
+    display: none;
+  }
+
   .hero-section {
-    padding-top: 140px;
+    padding-top: 132px;
     min-height: auto;
   }
 
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.65rem;
   }
 
   .hero-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
   }
 
   .hero-ctas {

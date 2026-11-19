@@ -4,11 +4,23 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!assets/|blog(?:/|$)|favicon|icons\\.svg|robots\\.txt|sitemap\\.xml).*)",
+      "source": "/((?!assets/|images/|blog(?:/|$)|favicon|icons\\.svg|robots\\.txt|sitemap\\.xml).*)",
       "destination": "/index.html"
     }
   ],
   "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
     {
       "source": "/sitemap.xml",
       "headers": [

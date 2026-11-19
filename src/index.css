@@ -1,36 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
 :root {
   /* HSL Color System */
   --hue-purple: 276;
   --hue-pink: 343;
   
   /* Light Theme Variables */
-  --primary: HSL(var(--hue-purple), 47%, 37%);
-  --primary-light: HSL(var(--hue-purple), 50%, 47%);
-  --primary-dark: HSL(var(--hue-purple), 60%, 25%);
-  --primary-glow: rgba(103, 50, 138, 0.15);
+  --primary: HSL(var(--hue-purple), 52%, 34%);
+  --primary-light: HSL(var(--hue-purple), 50%, 40%);
+  --primary-dark: HSL(var(--hue-purple), 60%, 24%);
+  --primary-glow: rgba(103, 50, 138, 0.14);
   
-  --accent: HSL(var(--hue-pink), 89%, 53%); /* #F31A56 */
-  --accent-hover: HSL(var(--hue-pink), 95%, 45%);
-  --accent-glow: rgba(243, 26, 86, 0.25);
+  --accent: #c81045;
+  --accent-hover: #a50b37;
+  --accent-glow: rgba(200, 16, 69, 0.22);
   
   --bg: HSL(220, 20%, 97%);
   --bg-gradient: linear-gradient(135deg, HSL(220, 20%, 97%) 0%, HSL(220, 15%, 93%) 100%);
-  --card-bg: rgba(255, 255, 255, 0.75);
-  --card-border: rgba(255, 255, 255, 0.6);
+  --card-bg: rgba(255, 255, 255, 0.88);
+  --card-border: rgba(255, 255, 255, 0.7);
   --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.02);
   
-  --text: HSL(220, 15%, 15%);
-  --text-muted: HSL(220, 10%, 45%);
+  --text: HSL(220, 18%, 14%);
+  --text-muted: HSL(220, 14%, 32%);
   --text-inverse: HSL(0, 0%, 100%);
   
-  --header-bg: rgba(255, 255, 255, 0.8);
-  --border: rgba(0, 0, 0, 0.08);
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --border: rgba(0, 0, 0, 0.09);
   --footer-bg: HSL(220, 12%, 92%);
   
-  --font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s ease, color 0.25s ease;
   --border-radius-lg: 24px;
   --border-radius-md: 16px;
   --border-radius-sm: 8px;
@@ -123,6 +121,14 @@ button {
   box-shadow: var(--card-shadow);
   border-radius: var(--border-radius-lg);
   transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .glass-panel {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.96);
+  }
 }
 
 .glass-panel:hover {
@@ -267,8 +273,8 @@ p.lead {
 }
 
 .badge-accent {
-  background: var(--accent-glow);
-  color: var(--accent);
+  background: rgba(200, 16, 69, 0.12);
+  color: #9e0a34;
 }
 
 .text-center {

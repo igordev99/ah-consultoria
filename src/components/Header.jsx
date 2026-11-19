@@ -19,8 +19,12 @@ export default function Header() {
       <div className="header-container container">
         <a href="#home" className="header-logo">
           <img 
-            src="https://andersonhernandes.com.br/wp-content/uploads/2021/12/novo-logo-site.png" 
+            src="/images/logo-ah.webp" 
             alt="Anderson Hernandes" 
+            width="234"
+            height="38"
+            fetchPriority="high"
+            decoding="async"
             className="logo-img"
           />
         </a>

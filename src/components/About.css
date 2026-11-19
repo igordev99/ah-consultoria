@@ -23,9 +23,15 @@
   width: 80%;
   height: 80%;
   background: var(--primary-light);
-  filter: blur(60px);
-  opacity: 0.2;
+  filter: blur(48px);
+  opacity: 0.18;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .about-image-glow {
+    display: none;
+  }
 }
 
 .about-image {
@@ -87,7 +93,7 @@
   font-size: 1.15rem;
   font-style: italic;
   font-weight: 500;
-  color: var(--primary-light);
+  color: var(--primary);
   border-left: 4px solid var(--accent);
   padding-left: 20px;
   margin-bottom: 28px;

@@ -1,3 +1,8 @@
+.services-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
 .services-header {
   margin-bottom: 60px;
 }
@@ -323,13 +328,13 @@ body.dark .diagnostic-main-title {
 .cta-btn {
   padding: 16px 32px;
   font-size: 0.98rem;
-  background: #25d366;
-  box-shadow: 0 10px 25px -10px rgba(37, 211, 102, 0.4);
+  background: #15803d;
+  box-shadow: 0 10px 25px -10px rgba(21, 128, 61, 0.45);
 }
 
 .cta-btn:hover {
-  background: #20ba56;
-  box-shadow: 0 15px 30px -8px rgba(37, 211, 102, 0.6);
+  background: #166534;
+  box-shadow: 0 15px 30px -8px rgba(21, 128, 61, 0.6);
   transform: translateY(-3px) scale(1.02);
 }
 

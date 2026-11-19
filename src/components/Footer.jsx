@@ -8,8 +8,12 @@ export default function Footer() {
         <div className="footer-top-grid">
           <div className="footer-brand-column">
             <img 
-              src="https://andersonhernandes.com.br/wp-content/uploads/2021/12/novo-logo-sitebranco-m.png" 
+              src="/images/logo-ah.webp" 
               alt="Anderson Hernandes" 
+              width="259"
+              height="42"
+              loading="lazy"
+              decoding="async"
               className="footer-logo"
             />
             <p className="footer-brand-desc">
