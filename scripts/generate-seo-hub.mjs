@@ -15,6 +15,9 @@ const WHATSAPP_URL = 'https://wa.me/5511981801650?text=Ol%C3%A1%2C%20vim%20pelo%
 const SERVICES_URL = 'https://andersonhernandesconsult.com.br/#servicos';
 const ABOUT_URL = 'https://andersonhernandesconsult.com.br/#sobre';
 const OG_IMAGE_URL = 'https://andersonhernandes.com.br/wp-content/uploads/2022/07/BG-WEB.jpg';
+const IAGENTIC_URL = 'https://iagentic.com.br';
+const IAGENTIC_PARTNER_URL = 'https://iagentic.com.br/parceiros/anderson-hernandes-consultoria';
+const IAGENTIC_WHATSAPP_URL = 'https://wa.me/5511995023956';
 const TODAY_ISO = '2026-11-18';
 
 const FORBIDDEN_REGEX = new RegExp(
@@ -1085,6 +1088,208 @@ a:hover {
   font-size: 0.96rem;
 }
 
+/* Executive Partner Banner - iAgentic (WCAG AA Dark Surface) */
+.ah-iagentic-banner {
+  background: linear-gradient(135deg, #130924 0%, #1E1B4B 56%, #0F172A 100%);
+  border: 1px solid #818CF8;
+  border-radius: var(--ah-radius-lg);
+  padding: 34px 36px;
+  margin: 36px 0;
+  color: #FFFFFF;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
+}
+
+.ah-iagentic-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #312E81;
+  border: 1px solid #A5B4FC;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.ah-iagentic-banner h2 {
+  color: #FFFFFF;
+  font-size: clamp(1.35rem, 2.4vw, 1.72rem);
+  margin: 0 0 12px;
+}
+
+.ah-iagentic-banner p {
+  color: #E2E8F0;
+  font-size: 1rem;
+  line-height: 1.68;
+  margin: 0 0 18px;
+  max-width: 900px;
+}
+
+.ah-iagentic-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 0 0 22px;
+}
+
+.ah-iagentic-pillar {
+  background: rgba(15, 23, 42, 0.76);
+  border: 1px solid rgba(165, 180, 252, 0.34);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.ah-iagentic-pillar strong {
+  display: block;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.94rem;
+  margin-bottom: 4px;
+}
+
+.ah-iagentic-pillar span {
+  display: block;
+  color: #E2E8F0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.ah-iagentic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.ah-btn-iagentic-emerald {
+  background: #34D399;
+  color: #0F172A !important;
+  border-color: #34D399;
+}
+
+.ah-btn-iagentic-emerald:hover {
+  background: #6EE7B7;
+  color: #0F172A !important;
+}
+
+.ah-btn-iagentic-light {
+  background: #FFFFFF;
+  color: #0F172A !important;
+  border-color: #FFFFFF;
+}
+
+.ah-btn-iagentic-light:hover {
+  background: #F1F5F9;
+  color: #0F172A !important;
+}
+
+.ah-btn-iagentic-dark {
+  background: #1E293B;
+  color: #FFFFFF !important;
+  border-color: #64748B;
+}
+
+.ah-btn-iagentic-dark:hover {
+  background: #334155;
+  color: #FFFFFF !important;
+}
+
+/* Ecosystem Partners Grid (WCAG AA Light Cards) */
+.ah-ecosystem-section {
+  margin: 36px 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--ah-border-subtle);
+}
+
+.ah-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.ah-ecosystem-card {
+  background: #FFFFFF;
+  border: 1px solid var(--ah-border);
+  border-radius: var(--ah-radius-md);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.ah-ecosystem-card-featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, #FAF5FF 0%, #FFFFFF 100%);
+  border: 2px solid #581C87;
+  box-shadow: 0 8px 24px rgba(88, 28, 135, 0.08);
+}
+
+.ah-ecosystem-tag {
+  display: inline-block;
+  background: #581C87;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.ah-ecosystem-tag-std {
+  display: inline-block;
+  background: #F3E8FF;
+  color: #581C87;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.ah-ecosystem-card h3 {
+  color: #0F172A;
+  font-size: 1.12rem;
+  margin: 0 0 8px;
+}
+
+.ah-ecosystem-card p {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ah-ecosystem-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.ah-ecosystem-cta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #581C87;
+  text-decoration: none;
+}
+
+.ah-ecosystem-cta:hover {
+  color: #3B0764;
+  text-decoration: underline;
+}
+
 /* CTA Banner */
 .ah-cta-banner {
   background: #1E1B4B;
@@ -1226,8 +1431,13 @@ a:hover {
 @media (max-width: 860px) {
   .ah-diag-grid,
   .ah-prev-next,
-  .ah-hub-grid {
+  .ah-hub-grid,
+  .ah-iagentic-pillars,
+  .ah-ecosystem-grid {
     grid-template-columns: 1fr;
+  }
+  .ah-iagentic-banner {
+    padding: 26px 22px;
   }
   .ah-nav-card-right {
     text-align: left;
@@ -1327,18 +1537,202 @@ function renderHeader() {
   </header>`;
 }
 
+const ECOSYSTEM_BY_SLUG = {
+  'mapeamento-processos-escritorios-contabeis-eliminar-retrabalho-fiscal-societario': [
+    {
+      badge: 'Certificação Digital no Onboarding',
+      name: 'KeySafe — Fila VIP de Videoconferência e Parceria PIX',
+      description: 'Padronize a homologação técnica de entrada com renovação preventiva de certificados A1 e comissionamento recorrente para o escritório.',
+      url: 'https://keysafe.com.br'
+    },
+    {
+      badge: 'Formalização Societária & Contratos',
+      name: 'e-Signa — Assinatura Digital e Eletrônica com Trilha Jurídica',
+      description: 'Elimine gargalos de propostas comerciais, atas de handoff e termos de responsabilidade técnica com assinatura pelo celular.',
+      url: 'https://www.e-signa.com.br'
+    }
+  ],
+  'inteligencia-artificial-escritorios-contabilidade-agentes-dominio-alterdata-ecac': [
+    {
+      badge: 'Cofre de Certificados A1',
+      name: 'KeySafe — Governança de Credenciais ICP-Brasil da Carteira',
+      description: 'Mantenha 100% dos certificados A1 válidos para alimentar integrações fiscais, robôs de e-CAC e automações contábeis sem interrupção.',
+      url: 'https://keysafe.com.br'
+    },
+    {
+      badge: 'Emissão Fiscal Padronizada',
+      name: 'UpNota — Motor de NFS-e Nacional Integrado',
+      description: 'Padronize o faturamento de prestadores de serviços da carteira para entregar XMLs limpos aos agentes contábeis.',
+      url: 'https://www.upnota.com.br'
+    }
+  ],
+  'como-estruturar-consultoria-reforma-tributaria-escritorio-contabil-novos-honorarios': [
+    {
+      badge: 'Simulador & Gestão LC 214/2025',
+      name: 'MapaRT — Plataforma de Diagnóstico de IBS, CBS e Split Payment',
+      description: 'Transforme balancetes da carteira em dossiês executivos de transição tributária (2026–2033) sem planilhas artesanais demoradas.',
+      url: 'https://mapart.com.br'
+    },
+    {
+      badge: 'Contabilidade Consultiva & Teses',
+      name: 'Uphold Contabilidade — Modelagem de Créditos B2B e Holdings',
+      description: 'Referência técnica em simulações comparativas entre Lucro Real, Lucro Presumido e Simples Híbrido na transição do IVA Dual.',
+      url: 'https://upholdcontabilidade.com.br'
+    }
+  ],
+  'padronizacao-nfse-nacional-ibs-cbs-carteira-clientes-escritorio-contabil': [
+    {
+      badge: 'Emissor NFS-e Nacional Homologado',
+      name: 'UpNota — Padronização de Faturamento e Grupos IBS/CBS',
+      description: 'Elimine o suporte improdutivo em dezenas de prefeituras instáveis com perfis fiscais pré-configurados pelo escritório.',
+      url: 'https://www.upnota.com.br'
+    },
+    {
+      badge: 'Programa de Parceiros ICP-Brasil',
+      name: 'KeySafe — Renovação Proativa de e-CNPJ A1 com Repasse PIX',
+      description: 'Controle centralizado de vencimentos A1 de toda a carteira com atendimento prioritário por vídeo e receita recorrente.',
+      url: 'https://keysafe.com.br'
+    }
+  ],
+  'bpo-financeiro-escalavel-contabilidades-cobranca-recorrente-conciliacao-multi-cnpj': [
+    {
+      badge: 'Automação de Contas a Receber',
+      name: 'Cash4 — Cobrança Recorrente, Pix Automático e Boleto Híbrido',
+      description: 'Escale de 18 a 28 empresas por analista de BPO com régua automática de inadimplência e conciliação multi-CNPJ em D+0.',
+      url: 'https://www.cash4.com.br'
+    },
+    {
+      badge: 'Faturamento Recorrente Integrado',
+      name: 'UpNota — Emissão Automática de Notas Fiscais no BPO',
+      description: 'Acelere a esteira de faturamento mensal dos clientes atendidos pela unidade de BPO Financeiro.',
+      url: 'https://www.upnota.com.br'
+    }
+  ],
+  'departamento-pessoal-lucrativo-integracao-ponto-portaria-671-assinatura-digital': [
+    {
+      badge: 'Jornada REP-P Portaria 671',
+      name: 'PontoUp — Apuração Eletrônica de Ponto sem Digitação Manual',
+      description: 'Elimine fotos de cartões de papel e planilhas quebradas com totalizadores de horas extras e banco de horas prontos para a folha.',
+      url: 'https://www.opontoup.com.br'
+    },
+    {
+      badge: 'Kit Admissional & Férias no Celular',
+      name: 'e-Signa — Formalização Trabalhista 100% Digital',
+      description: 'Colha assinaturas juridicamente válidas em contratos de trabalho, avisos de férias e rescisões em minutos.',
+      url: 'https://www.e-signa.com.br'
+    }
+  ],
+  'gestao-alvaras-licencas-certificados-digitais-setor-legalizacao-societaria': [
+    {
+      badge: 'Monitoramento Paralegal & Licenças',
+      name: 'Alvará em Ordem — Controle de Alvarás, VISA e AVCB/CLCB',
+      description: 'Painel semafórico com alertas de 90, 60 e 30 dias para converter conformidade regulatória em honorários paralegais recorrentes.',
+      url: 'https://www.alvaraemordem.com.br'
+    },
+    {
+      badge: 'Certificação Digital Societária',
+      name: 'KeySafe — Renovação Anual de e-CNPJ e e-CPF com Comissão PIX',
+      description: 'Transforme o calendário anual de certificados digitais da carteira societária em receita líquida recorrente.',
+      url: 'https://keysafe.com.br'
+    }
+  ],
+  'indicadores-gestao-escritorio-contabil-nrr-churn-margem-sla-conselho': [
+    {
+      badge: 'Expansão de NRR com Reforma Tributária',
+      name: 'MapaRT — Novos Projetos Consultivos de Alto Ticket na Carteira',
+      description: 'Eleve o Net Revenue Retention (NRR) do escritório ofertando diagnósticos estruturados de transição IBS/CBS.',
+      url: 'https://mapart.com.br'
+    },
+    {
+      badge: 'Inadimplência Zero nos Honorários',
+      name: 'Cash4 — Régua Automática de Honorários Contábeis via PIX/Boleto',
+      description: 'Proteja o EBITDA e o caixa líquido do escritório automatizando a cobrança recorrente da própria carteira contábil.',
+      url: 'https://www.cash4.com.br'
+    }
+  ]
+};
+
+function renderIagenticPartnerBanner() {
+  return `
+      <section class="ah-iagentic-banner" aria-label="Parceiro Oficial de IA e Automação Contábil iAgentic">
+        <span class="ah-iagentic-seal">PARCEIRO OFICIAL DE IA &amp; AUTOMAÇÃO CONTÁBIL · IAGENTIC</span>
+        <h2>Do Diagnóstico de Processos à Implantação Real de Agentes de IA no Seu Escritório Contábil</h2>
+        <p>Após estruturar e padronizar as rotinas com a metodologia de <strong>Anderson Hernandes</strong>, a <strong>iAgentic</strong> — parceiro oficial de engenharia de IA — constrói e opera Agentes Autônomos integrados diretamente a <strong>Domínio, Alterdata, Questor, Fortes, Portal e-CAC e WhatsApp Oficial</strong>, convertendo horas operacionais repetitivas em margem líquida.</p>
+        <div class="ah-iagentic-pillars">
+          <div class="ah-iagentic-pillar">
+            <strong>Domínio, Alterdata, Questor &amp; Fortes</strong>
+            <span>Extração, conciliação prévia e preparação automatizada de arquivos para o seu ERP contábil atual sem migração traumática.</span>
+          </div>
+          <div class="ah-iagentic-pillar">
+            <strong>Vigilância Autônoma de e-CAC &amp; DTE</strong>
+            <span>Monitoramento contínuo de caixas postais, malhas fiscais, certidões e intimações com triagem executiva de criticidade.</span>
+          </div>
+          <div class="ah-iagentic-pillar">
+            <strong>Atendimento Contábil no WhatsApp Oficial</strong>
+            <span>Agentes com guardrails normativos que qualificam demandas por CNPJ 24x7, cobram documentos mensais e blindam seus analistas.</span>
+          </div>
+        </div>
+        <div class="ah-iagentic-actions">
+          <a href="${IAGENTIC_PARTNER_URL}" target="_blank" rel="noopener noreferrer" class="ah-btn ah-btn-iagentic-emerald">Arquitetura Anderson Hernandes + iAgentic →</a>
+          <a href="${IAGENTIC_URL}" target="_blank" rel="noopener noreferrer" class="ah-btn ah-btn-iagentic-light">Conhecer a iAgentic</a>
+          <a href="${IAGENTIC_WHATSAPP_URL}" target="_blank" rel="noopener noreferrer" class="ah-btn ah-btn-iagentic-dark">WhatsApp Engenharia iAgentic</a>
+        </div>
+      </section>`;
+}
+
+function renderEcosystemSection(article) {
+  const extraPartners = ECOSYSTEM_BY_SLUG[article.slug] || [];
+  const extraCardsHtml = extraPartners
+    .map(
+      (p) => `
+            <div class="ah-ecosystem-card">
+              <div>
+                <span class="ah-ecosystem-tag-std">${escapeHtml(p.badge.trim())}</span>
+                <h3>${escapeHtml(p.name)}</h3>
+                <p>${escapeHtml(p.description)}</p>
+              </div>
+              <div class="ah-ecosystem-links">
+                <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="ah-ecosystem-cta">Conhecer plataforma recomendada →</a>
+              </div>
+            </div>`
+    )
+    .join('');
+
+  return `
+        <section class="ah-ecosystem-section" id="ecossistema-integrado" aria-label="Ecossistema Integrado e Soluções Complementares Recomendadas">
+          <h2>Ecossistema Integrado &amp; Soluções Complementares Recomendadas</h2>
+          <p style="color:#334155;font-size:0.98rem;margin:0;">Escale os resultados do diagnóstico operacional conectando engenharia de agentes de IA e tecnologias B2B homologadas para contabilidades:</p>
+          <div class="ah-ecosystem-grid">
+            <div class="ah-ecosystem-card ah-ecosystem-card-featured">
+              <div>
+                <span class="ah-ecosystem-tag">PARCEIRO ESTRUTURAL #1 · IA &amp; ENGENHARIA</span>
+                <h3>Parceiro Estrutural de IA &amp; Engenharia — iAgentic</h3>
+                <p>Implantação sob medida de Agentes de Inteligência Artificial e automação operacional B2B para escritórios contábeis nos sistemas Domínio, Alterdata, Questor, Fortes, e-CAC e WhatsApp Oficial, unindo governança LGPD e ROI imediato em folha produtiva.</p>
+              </div>
+              <div class="ah-ecosystem-links">
+                <a href="${IAGENTIC_PARTNER_URL}" target="_blank" rel="noopener noreferrer" class="ah-ecosystem-cta">Ver Aliança Anderson Hernandes + iAgentic →</a>
+                <a href="${IAGENTIC_URL}" target="_blank" rel="noopener noreferrer" class="ah-ecosystem-cta">Acessar iagentic.com.br →</a>
+              </div>
+            </div>
+            ${extraCardsHtml}
+          </div>
+        </section>`;
+}
+
 function renderFooter() {
   return `
   <footer class="ah-footer">
     <div class="ah-container ah-footer-inner">
       <div>
         <strong>${BRAND_NAME}</strong> — Estratégia, Processos e Inteligência Artificial para Escritórios Contábeis.<br />
-        <span>Atendimento executivo para sócios e diretores de empresas contábeis em todo o Brasil.</span>
+        <span>Atendimento executivo para sócios e diretores de empresas contábeis em todo o Brasil.</span><br />
+        <span style="display:inline-block;margin-top:6px;color:#0F172A;font-weight:700;">Parceiro Oficial de Engenharia de IA: <a href="${IAGENTIC_URL}" target="_blank" rel="noopener noreferrer" style="color:#581C87;font-weight:800;">iAgentic (iagentic.com.br)</a> • <a href="${IAGENTIC_PARTNER_URL}" target="_blank" rel="noopener noreferrer" style="color:#047857;">Implantação Contábil Assistida</a></span>
       </div>
       <div style="display:flex;gap:18px;flex-wrap:wrap;">
         <a href="${SITE_URL}/">Início</a>
         <a href="/blog/">Artigos &amp; Diagnósticos</a>
         <a href="${SERVICES_URL}">Serviços</a>
+        <a href="${IAGENTIC_URL}" target="_blank" rel="noopener noreferrer">iAgentic IA</a>
         <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp (11) 98180-1650</a>
       </div>
     </div>
@@ -1562,6 +1956,8 @@ function renderArticleHtml(article, index) {
           </div>
         </section>
 
+        ${renderEcosystemSection(article)}
+
         <section class="ah-section" aria-label="Perguntas Frequentes">
           <h2>Perguntas Frequentes de Sócios de Escritórios Contábeis</h2>
           <div class="ah-faq-list">
@@ -1569,6 +1965,8 @@ function renderArticleHtml(article, index) {
           </div>
         </section>
       </div>
+
+      ${renderIagenticPartnerBanner()}
 
       <section class="ah-cta-banner" aria-label="Agendar Consultoria">
         <div>
@@ -1673,6 +2071,8 @@ function renderHubIndexHtml() {
     <section class="ah-hub-grid" aria-label="Dossiês Estratégicos">
       ${cardsHtml}
     </section>
+
+    ${renderIagenticPartnerBanner()}
 
     <section class="ah-cta-banner">
       <div>

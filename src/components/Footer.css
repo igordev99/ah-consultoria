@@ -124,15 +124,115 @@ body:not(.dark) .footer-logo {
   color: #20ba56;
 }
 
+.footer-iagentic-partner {
+  background: linear-gradient(135deg, #130924 0%, #1e1b4b 58%, #0f172a 100%);
+  border: 1px solid #818cf8;
+  border-radius: 18px;
+  padding: 28px 32px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+}
+
+.footer-iagentic-copy {
+  max-width: 680px;
+}
+
+.footer-iagentic-seal {
+  display: inline-block;
+  background: #312e81;
+  border: 1px solid #a5b4fc;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.footer-iagentic-title {
+  color: #ffffff;
+  font-size: 1.18rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.footer-iagentic-desc {
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-iagentic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-iagentic-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: #34d399;
+  color: #0f172a;
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-iagentic-btn-primary:hover {
+  background: #6ee7b7;
+  color: #0f172a;
+}
+
+.footer-iagentic-btn-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-iagentic-btn-light:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
 .footer-bottom {
   border-top: 1px solid var(--border);
   padding-top: 32px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer-bottom p {
   font-size: 0.82rem;
   color: var(--text-muted);
+}
+
+.footer-partner-line a {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Responsividade */

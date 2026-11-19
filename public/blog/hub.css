@@ -466,6 +466,208 @@ a:hover {
   font-size: 0.96rem;
 }
 
+/* Executive Partner Banner - iAgentic (WCAG AA Dark Surface) */
+.ah-iagentic-banner {
+  background: linear-gradient(135deg, #130924 0%, #1E1B4B 56%, #0F172A 100%);
+  border: 1px solid #818CF8;
+  border-radius: var(--ah-radius-lg);
+  padding: 34px 36px;
+  margin: 36px 0;
+  color: #FFFFFF;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
+}
+
+.ah-iagentic-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #312E81;
+  border: 1px solid #A5B4FC;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.ah-iagentic-banner h2 {
+  color: #FFFFFF;
+  font-size: clamp(1.35rem, 2.4vw, 1.72rem);
+  margin: 0 0 12px;
+}
+
+.ah-iagentic-banner p {
+  color: #E2E8F0;
+  font-size: 1rem;
+  line-height: 1.68;
+  margin: 0 0 18px;
+  max-width: 900px;
+}
+
+.ah-iagentic-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 0 0 22px;
+}
+
+.ah-iagentic-pillar {
+  background: rgba(15, 23, 42, 0.76);
+  border: 1px solid rgba(165, 180, 252, 0.34);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.ah-iagentic-pillar strong {
+  display: block;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.94rem;
+  margin-bottom: 4px;
+}
+
+.ah-iagentic-pillar span {
+  display: block;
+  color: #E2E8F0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.ah-iagentic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.ah-btn-iagentic-emerald {
+  background: #34D399;
+  color: #0F172A !important;
+  border-color: #34D399;
+}
+
+.ah-btn-iagentic-emerald:hover {
+  background: #6EE7B7;
+  color: #0F172A !important;
+}
+
+.ah-btn-iagentic-light {
+  background: #FFFFFF;
+  color: #0F172A !important;
+  border-color: #FFFFFF;
+}
+
+.ah-btn-iagentic-light:hover {
+  background: #F1F5F9;
+  color: #0F172A !important;
+}
+
+.ah-btn-iagentic-dark {
+  background: #1E293B;
+  color: #FFFFFF !important;
+  border-color: #64748B;
+}
+
+.ah-btn-iagentic-dark:hover {
+  background: #334155;
+  color: #FFFFFF !important;
+}
+
+/* Ecosystem Partners Grid (WCAG AA Light Cards) */
+.ah-ecosystem-section {
+  margin: 36px 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--ah-border-subtle);
+}
+
+.ah-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.ah-ecosystem-card {
+  background: #FFFFFF;
+  border: 1px solid var(--ah-border);
+  border-radius: var(--ah-radius-md);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.ah-ecosystem-card-featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, #FAF5FF 0%, #FFFFFF 100%);
+  border: 2px solid #581C87;
+  box-shadow: 0 8px 24px rgba(88, 28, 135, 0.08);
+}
+
+.ah-ecosystem-tag {
+  display: inline-block;
+  background: #581C87;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.ah-ecosystem-tag-std {
+  display: inline-block;
+  background: #F3E8FF;
+  color: #581C87;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.ah-ecosystem-card h3 {
+  color: #0F172A;
+  font-size: 1.12rem;
+  margin: 0 0 8px;
+}
+
+.ah-ecosystem-card p {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ah-ecosystem-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.ah-ecosystem-cta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #581C87;
+  text-decoration: none;
+}
+
+.ah-ecosystem-cta:hover {
+  color: #3B0764;
+  text-decoration: underline;
+}
+
 /* CTA Banner */
 .ah-cta-banner {
   background: #1E1B4B;
@@ -607,8 +809,13 @@ a:hover {
 @media (max-width: 860px) {
   .ah-diag-grid,
   .ah-prev-next,
-  .ah-hub-grid {
+  .ah-hub-grid,
+  .ah-iagentic-pillars,
+  .ah-ecosystem-grid {
     grid-template-columns: 1fr;
+  }
+  .ah-iagentic-banner {
+    padding: 26px 22px;
   }
   .ah-nav-card-right {
     text-align: left;

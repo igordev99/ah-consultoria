@@ -67,8 +67,44 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="footer-iagentic-partner" aria-label="Parceiro Oficial de Engenharia de IA iAgentic">
+          <div className="footer-iagentic-copy">
+            <span className="footer-iagentic-seal">PARCEIRO OFICIAL DE ENGENHARIA DE IA · IAGENTIC</span>
+            <h4 className="footer-iagentic-title">
+              Parceiro Oficial de Engenharia de IA: iAgentic
+            </h4>
+            <p className="footer-iagentic-desc">
+              Conectamos o diagnóstico estratégico de processos contábeis de Anderson Hernandes à implantação prática de Agentes de IA nos sistemas Domínio, Alterdata, Questor, Fortes, e-CAC e WhatsApp Oficial.
+            </p>
+          </div>
+          <div className="footer-iagentic-actions">
+            <a
+              href="https://iagentic.com.br/parceiros/anderson-hernandes-consultoria"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-iagentic-btn-primary"
+            >
+              Aliança AH + iAgentic →
+            </a>
+            <a
+              href="https://iagentic.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-iagentic-btn-light"
+            >
+              iagentic.com.br
+            </a>
+          </div>
+        </div>
+
         <div className="footer-bottom">
           <p>© 2026 Anderson Hernandes. Todos os direitos reservados. Estratégia e Consultoria para Escritórios Contábeis.</p>
+          <p className="footer-partner-line">
+            Parceiro Oficial de Engenharia de IA:{' '}
+            <a href="https://iagentic.com.br" target="_blank" rel="noopener noreferrer">
+              iAgentic (iagentic.com.br)
+            </a>
+          </p>
         </div>
       </div>
     </footer>
