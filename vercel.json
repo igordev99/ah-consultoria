@@ -4,11 +4,125 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!assets/|images/|blog(?:/|$)|favicon|icons\\.svg|robots\\.txt|sitemap\\.xml).*)",
+      "source": "/((?!api/|\\.well-known/).*)",
+      "has": [{ "type": "header", "key": "accept", "value": ".*text/markdown.*" }],
+      "missing": [{ "type": "header", "key": "accept", "value": ".*text/html.*" }],
+      "destination": "/home-agent.md"
+    },
+    {
+      "source": "/((?!api/|assets/|images/|\\.well-known/|auth\\.md$|openapi\\.json$|home-agent\\.md$|robots\\.txt$|llms\\.txt$|llms-full\\.txt$|blog(?:/|$)|favicon|icons\\.svg|sitemap\\.xml$).*)",
       "destination": "/index.html"
     }
   ],
   "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</.well-known/api-catalog>; rel=\"api-catalog\", </openapi.json>; rel=\"service-desc\", </llms.txt>; rel=\"service-doc\", </.well-known/agent-card.json>; rel=\"describedby\""
+        },
+        { "key": "Vary", "value": "Accept" },
+        { "key": "Content-Signal", "value": "search=yes, ai-input=yes, ai-train=yes" }
+      ]
+    },
+    {
+      "source": "/((?!api/|\\.well-known/).*)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</.well-known/api-catalog>; rel=\"api-catalog\", </openapi.json>; rel=\"service-desc\", </llms.txt>; rel=\"service-doc\", </.well-known/agent-card.json>; rel=\"describedby\""
+        },
+        { "key": "Vary", "value": "Accept" }
+      ]
+    },
+    {
+      "source": "/home-agent.md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Vary", "value": "Accept" },
+        { "key": "Content-Signal", "value": "search=yes, ai-input=yes, ai-train=yes" },
+        { "key": "x-markdown-tokens", "value": "890" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/auth.md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/openapi.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/llms-full.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/.well-known/api-catalog",
+      "headers": [
+        { "key": "Content-Type", "value": "application/linkset+json" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/.well-known/http-message-signatures-directory",
+      "headers": [
+        { "key": "Content-Type", "value": "application/http-message-signatures-directory+json" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/.well-known/(oauth-protected-resource|oauth-authorization-server|openid-configuration|jwks\\.json|agent-card\\.json|ai-catalog\\.json|poppy\\.json|mcp\\.json)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/.well-known/mcp/server-card.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-skills/index.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-skills/:slug/SKILL.md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
     {
       "source": "/assets/(.*)",
       "headers": [
@@ -25,12 +139,6 @@
       "source": "/sitemap.xml",
       "headers": [
         { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
-      ]
-    },
-    {
-      "source": "/robots.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
       ]
     }
   ]

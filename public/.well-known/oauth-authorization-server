@@ -1,0 +1,75 @@
+{
+  "issuer": "https://www.andersonhernandesconsult.com.br",
+  "authorization_endpoint": "https://painel.iagentic.com.br/oauth/authorize",
+  "token_endpoint": "https://painel.iagentic.com.br/oauth/token",
+  "userinfo_endpoint": "https://painel.iagentic.com.br/oauth/userinfo",
+  "jwks_uri": "https://www.andersonhernandesconsult.com.br/.well-known/jwks.json",
+  "revocation_endpoint": "https://painel.iagentic.com.br/oauth/revoke",
+  "registration_endpoint": "https://painel.iagentic.com.br/oauth/register",
+  "service_documentation": "https://www.andersonhernandesconsult.com.br/auth.md",
+  "grant_types_supported": [
+    "authorization_code",
+    "client_credentials",
+    "refresh_token"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "catalog:read",
+    "diagnostic:submit",
+    "mcp:tools"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "private_key_jwt",
+    "none"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "EdDSA",
+    "RS256"
+  ],
+  "poppy_domains": [
+    "www.andersonhernandesconsult.com.br"
+  ],
+  "agent_auth": {
+    "skill": "https://www.andersonhernandesconsult.com.br/auth.md",
+    "register_uri": "https://painel.iagentic.com.br/agent/auth/register",
+    "claim_uri": "https://painel.iagentic.com.br/agent/auth/claim",
+    "revocation_uri": "https://painel.iagentic.com.br/agent/auth/revoke",
+    "events_supported": [
+      "https://schemas.openid.net/secevent/oauth/event-type/token-revoked"
+    ],
+    "identity_types_supported": [
+      "identity_assertion",
+      "anonymous"
+    ],
+    "identity_assertion": {
+      "assertion_types_supported": [
+        "urn:ietf:params:oauth:token-type:id-jag",
+        "verified_email"
+      ],
+      "credential_types_supported": [
+        "api_key",
+        "oauth_token"
+      ],
+      "claim_uri": "https://painel.iagentic.com.br/agent/auth/claim"
+    },
+    "anonymous": {
+      "credential_types_supported": [
+        "api_key",
+        "claim_token"
+      ],
+      "claim_uri": "https://painel.iagentic.com.br/agent/auth/claim"
+    }
+  }
+}

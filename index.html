@@ -11,6 +11,65 @@
     <meta name="keywords" content="Anderson Hernandes, Tactus, consultoria contábil, mapeamento de processos, IA na contabilidade, setor fiscal, legalização societária" />
     <meta name="author" content="Anderson Hernandes" />
     <link rel="canonical" href="https://www.andersonhernandesconsult.com.br/" />
+    <link rel="ai-catalog" href="/.well-known/ai-catalog.json" />
+    <link rel="api-catalog" href="/.well-known/api-catalog" />
+    <link rel="service-desc" href="/openapi.json" type="application/openapi+json" />
+    <link rel="service-doc" href="/llms.txt" type="text/plain" />
+    <link rel="describedby" href="/.well-known/agent-card.json" type="application/json" />
+    <script>
+      (function () {
+        function registerAhWebMcp() {
+          if (typeof window === 'undefined' || window.__webMcp_ah_consultoria) return;
+          var mc = (typeof document !== 'undefined' && document.modelContext) || (typeof navigator !== 'undefined' && navigator.modelContext);
+          if (!mc || typeof mc.registerTool !== 'function') return;
+          window.__webMcp_ah_consultoria = true;
+          var tools = [
+            {
+              name: 'consultar_referencia_ah_consultoria',
+              description: 'Consultar metodologias de crescimento previsível, vendas consultivas B2B, reajuste de carteira defasada, implantação de BPO financeiro e liderança operacional para donos de escritórios contábeis.',
+              inputSchema: { type: 'object', properties: { detalhado: { type: 'boolean' } } },
+              execute: async function (input) {
+                var r = await fetch(input && input.detalhado ? '/llms-full.txt' : '/llms.txt');
+                return { content: [{ type: 'text', text: await r.text() }] };
+              }
+            },
+            {
+              name: 'solicitar_atendimento_ah_consultoria',
+              description: 'Submeter perfil do escritório contábil (tamanho de carteira, equipe e meta de expansão) para avaliação consultiva com a equipe de Anderson Hernandes.',
+              inputSchema: {
+                type: 'object',
+                required: ['fullname', 'email', 'message'],
+                properties: {
+                  fullname: { type: 'string' },
+                  email: { type: 'string' },
+                  phone: { type: 'string' },
+                  company: { type: 'string' },
+                  message: { type: 'string' }
+                }
+              },
+              execute: async function (input) {
+                var r = await fetch('/api/contact', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(input || {})
+                });
+                return { content: [{ type: 'text', text: await r.text() }] };
+              }
+            }
+          ];
+          for (var i = 0; i < tools.length; i++) {
+            try { mc.registerTool(tools[i]); } catch (e) {}
+          }
+        }
+        registerAhWebMcp();
+        if (typeof document !== 'undefined') {
+          document.addEventListener('DOMContentLoaded', registerAhWebMcp, { once: true });
+        }
+        if (typeof window !== 'undefined') {
+          window.addEventListener('load', registerAhWebMcp, { once: true });
+        }
+      })();
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

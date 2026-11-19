@@ -1,0 +1,18 @@
+{
+  "serverInfo": {
+    "name": "Anderson Hernandes Consultoria para Empresas Contábeis MCP",
+    "version": "1.0.0"
+  },
+  "description": "Mentoria executiva e consultoria de gestão B2B2B dedicada exclusivamente a sócios e diretores de escritórios de contabilidade: máquina comercial contábil, precificação de honorários por valor/complexidade, estruturação de BPO financeiro e escala lucrativa.",
+  "url": "https://www.andersonhernandesconsult.com.br/api/mcp",
+  "endpoint": "https://www.andersonhernandesconsult.com.br/api/mcp",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://www.andersonhernandesconsult.com.br/api/mcp"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": true
+  }
+}

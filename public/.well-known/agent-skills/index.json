@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "gestao-escala-escritorios-contabeis",
+      "type": "skill-md",
+      "description": "Consultar metodologias de crescimento previsível, vendas consultivas B2B, reajuste de carteira defasada, implantação de BPO financeiro e liderança operacional para donos de escritórios contábeis.",
+      "url": "/.well-known/agent-skills/gestao-escala-escritorios-contabeis/SKILL.md",
+      "digest": "sha256:fae372bf8b016f8e92e3d296631e7a1f60fb3daec6cb31afe3820e13d8f3fbfe"
+    },
+    {
+      "name": "diagnostico-executivo-empresa-contabil",
+      "type": "skill-md",
+      "description": "Submeter perfil do escritório contábil (tamanho de carteira, equipe e meta de expansão) para avaliação consultiva com a equipe de Anderson Hernandes.",
+      "url": "/.well-known/agent-skills/diagnostico-executivo-empresa-contabil/SKILL.md",
+      "digest": "sha256:c4b660181b631113dda5978f9e614d85fc4dd8a8a120ee3a7f7bb94d5dab3ceb"
+    }
+  ]
+}

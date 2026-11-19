@@ -2121,8 +2121,34 @@ ${items}
 }
 
 function buildRobotsTxt() {
-  return `User-agent: *
+  const bots = [
+    '*',
+    'OAI-SearchBot',
+    'ChatGPT-User',
+    'GPTBot',
+    'Claude-SearchBot',
+    'Claude-User',
+    'ClaudeBot',
+    'Anthropic-ai',
+    'PerplexityBot',
+    'Perplexity-User',
+    'Google-Extended',
+    'Googlebot',
+    'Applebot-Extended',
+    'CCBot',
+    'Amazonbot',
+  ];
+  const sections = bots
+    .map(
+      (b) => `User-agent: ${b}
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes`
+    )
+    .join('\n\n');
+  return `# Anderson Hernandes Consultoria para Empresas Contábeis
+# ${SITE_URL}
+
+${sections}
 
 Sitemap: ${SITE_URL}/sitemap.xml
 `;

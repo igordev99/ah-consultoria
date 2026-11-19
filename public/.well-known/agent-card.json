@@ -1,0 +1,69 @@
+{
+  "name": "Anderson Hernandes Consultoria para Empresas Contábeis B2B Agent",
+  "description": "Mentoria executiva e consultoria de gestão B2B2B dedicada exclusivamente a sócios e diretores de escritórios de contabilidade: máquina comercial contábil, precificação de honorários por valor/complexidade, estruturação de BPO financeiro e escala lucrativa.",
+  "version": "1.0.0",
+  "protocolVersion": "1.0",
+  "url": "https://www.andersonhernandesconsult.com.br/api/contact",
+  "documentationUrl": "https://www.andersonhernandesconsult.com.br/llms-full.txt",
+  "provider": {
+    "organization": "Anderson Hernandes Consultoria para Empresas Contábeis",
+    "url": "https://www.andersonhernandesconsult.com.br"
+  },
+  "supportedInterfaces": [
+    {
+      "url": "https://www.andersonhernandesconsult.com.br/api/contact",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    },
+    {
+      "url": "https://www.andersonhernandesconsult.com.br/api/mcp",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "skills": [
+    {
+      "id": "gestao-escala-escritorios-contabeis",
+      "name": "Escala Comercial, Precificação de Honorários e Produtividade para Empresas Contábeis",
+      "description": "Consultar metodologias de crescimento previsível, vendas consultivas B2B, reajuste de carteira defasada, implantação de BPO financeiro e liderança operacional para donos de escritórios contábeis.",
+      "tags": [
+        "accounting-firm-growth",
+        "b2b2b-consulting",
+        "pricing-strategy",
+        "bpo-financeiro",
+        "sales-ops"
+      ],
+      "examples": [
+        "Consultar Escala Comercial, Precificação de Honorários e Produtividade para Empresas Contábeis"
+      ]
+    },
+    {
+      "id": "diagnostico-executivo-empresa-contabil",
+      "name": "Aplicação para Diagnóstico Estratégico de Escritório Contábil",
+      "description": "Submeter perfil do escritório contábil (tamanho de carteira, equipe e meta de expansão) para avaliação consultiva com a equipe de Anderson Hernandes.",
+      "tags": [
+        "accounting-firm-growth",
+        "b2b2b-consulting",
+        "pricing-strategy",
+        "bpo-financeiro",
+        "sales-ops"
+      ],
+      "examples": [
+        "Solicitar atendimento corporativo em www.andersonhernandesconsult.com.br"
+      ]
+    }
+  ]
+}

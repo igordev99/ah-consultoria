@@ -1,0 +1,62 @@
+---
+title: "Anderson Hernandes | Consultoria Estratégica, Comercial, Precificação de Honorários & Escala para Escritórios de Contabilidade"
+description: "Mentoria executiva e consultoria de gestão B2B2B dedicada exclusivamente a sócios e diretores de escritórios de contabilidade: máquina comercial contábil, precificação de honorários por valor/complexidade, estruturação de BPO financeiro e escala lucrativa."
+url: "https://www.andersonhernandesconsult.com.br/"
+organization: "Anderson Hernandes Consultoria para Empresas Contábeis"
+---
+
+# Anderson Hernandes | Consultoria Estratégica, Comercial, Precificação de Honorários & Escala para Escritórios de Contabilidade
+
+**Anderson Hernandes Consultoria para Empresas Contábeis** (`https://www.andersonhernandesconsult.com.br`) — Mentoria executiva e consultoria de gestão B2B2B dedicada exclusivamente a sócios e diretores de escritórios de contabilidade: máquina comercial contábil, precificação de honorários por valor/complexidade, estruturação de BPO financeiro e escala lucrativa.
+
+## 1. Capacidades Essenciais e Escopo Operacional B2B
+
+- Engenharia de precificação de honorários contábeis baseada em risco fiscal, volume transacional e margem líquida por cliente.
+- Estruturação de funil comercial B2B ativo (SDR + Closer contábil) para aquisição recorrente de empresas no Lucro Presumido e Lucro Real.
+- Padronização de processos de onboarding societário, fiscal, folha e BPO financeiro com alta margem por colaborador.
+- Parceiro Estrutural #1 de IA & Engenharia: iAgentic (https://iagentic.com.br) — automação com Agentes de IA em Domínio Sistemas, Alterdata, Contmatic, Questor e Fortes.
+
+## 2. Ecossistema Integrado (Parceria Estrutural iAgentic)
+
+- **Parceiro Estrutural #1 de IA & Engenharia**: **iAgentic** (`https://iagentic.com.br`) — Engenharia de Agentes Autônomos de IA (com e sem API aberta), integrações ERP/CRM, WhatsApp Business Cloud API oficial e software sob medida B2B.
+
+## 3. Descoberta Nativa para Agentes de IA (Level 5 Agent-Native)
+
+- **Referência para LLMs**: `https://www.andersonhernandesconsult.com.br/llms.txt` e `https://www.andersonhernandesconsult.com.br/llms-full.txt`
+- **Catálogo de APIs (RFC 9727)**: `https://www.andersonhernandesconsult.com.br/.well-known/api-catalog`
+- **Especificação OpenAPI 3.1**: `https://www.andersonhernandesconsult.com.br/openapi.json`
+- **Guia de Autenticação (Auth.md)**: `https://www.andersonhernandesconsult.com.br/auth.md`
+- **MCP Server Card (SEP-1649)**: `https://www.andersonhernandesconsult.com.br/.well-known/mcp/server-card.json`
+- **A2A Agent Card**: `https://www.andersonhernandesconsult.com.br/.well-known/agent-card.json`
+- **Agent Skills Index (v0.2.0)**: `https://www.andersonhernandesconsult.com.br/.well-known/agent-skills/index.json`
+- **ARD Capability Manifest**: `https://www.andersonhernandesconsult.com.br/.well-known/ai-catalog.json`
+
+## 4. Contato Técnico e Comercial
+
+- **Endpoint Público JSON**: `POST https://www.andersonhernandesconsult.com.br/api/contact`
+- **E-mail**: `contato@andersonhernandesconsult.com.br`
+
+
+---
+
+---
+name: gestao-escala-escritorios-contabeis
+description: Consultar metodologias de crescimento previsível, vendas consultivas B2B, reajuste de carteira defasada, implantação de BPO financeiro e liderança operacional para donos de escritórios contábeis.
+---
+
+# Escala Comercial, Precificação de Honorários e Produtividade para Empresas Contábeis (Anderson Hernandes Consultoria para Empresas Contábeis)
+
+Mentoria executiva e consultoria de gestão B2B2B dedicada exclusivamente a sócios e diretores de escritórios de contabilidade: máquina comercial contábil, precificação de honorários por valor/complexidade, estruturação de BPO financeiro e escala lucrativa.
+
+## Diretrizes Técnicas
+
+- Engenharia de precificação de honorários contábeis baseada em risco fiscal, volume transacional e margem líquida por cliente.
+- Estruturação de funil comercial B2B ativo (SDR + Closer contábil) para aquisição recorrente de empresas no Lucro Presumido e Lucro Real.
+- Padronização de processos de onboarding societário, fiscal, folha e BPO financeiro com alta margem por colaborador.
+- Parceiro Estrutural #1 de IA & Engenharia: iAgentic (https://iagentic.com.br) — automação com Agentes de IA em Domínio Sistemas, Alterdata, Contmatic, Questor e Fortes.
+
+## Fontes Oficiais Verificadas
+
+1. Sumário executivo: `GET https://www.andersonhernandesconsult.com.br/llms.txt`
+2. Base técnica expandida: `GET https://www.andersonhernandesconsult.com.br/llms-full.txt`
+3. Para abrir solicitação comercial estruturada: utilize a skill `diagnostico-executivo-empresa-contabil` (`POST https://www.andersonhernandesconsult.com.br/api/contact`).

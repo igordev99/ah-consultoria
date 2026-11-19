@@ -1,0 +1,45 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Anderson Hernandes Consultoria para Empresas Contábeis",
+    "identifier": "did:web:www.andersonhernandesconsult.com.br"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:www.andersonhernandesconsult.com.br:server:mcp",
+      "displayName": "Anderson Hernandes Consultoria para Empresas Contábeis MCP Server",
+      "type": "application/mcp-server-card+json",
+      "url": "https://www.andersonhernandesconsult.com.br/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "Consultar metodologias de crescimento previsível, vendas consultivas B2B, reajuste de carteira defasada, implantação de BPO financeiro e liderança operacional para donos de escritórios contábeis."
+      ]
+    },
+    {
+      "identifier": "urn:air:www.andersonhernandesconsult.com.br:agent:b2b",
+      "displayName": "Anderson Hernandes Consultoria para Empresas Contábeis B2B Agent",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://www.andersonhernandesconsult.com.br/.well-known/agent-card.json",
+      "representativeQueries": [
+        "Submeter perfil do escritório contábil (tamanho de carteira, equipe e meta de expansão) para avaliação consultiva com a equipe de Anderson Hernandes."
+      ]
+    },
+    {
+      "identifier": "urn:air:www.andersonhernandesconsult.com.br:api:public",
+      "displayName": "Anderson Hernandes Consultoria para Empresas Contábeis OpenAPI",
+      "type": "application/openapi+json",
+      "url": "https://www.andersonhernandesconsult.com.br/openapi.json",
+      "representativeQueries": [
+        "Especificação OpenAPI 3.1 de www.andersonhernandesconsult.com.br"
+      ]
+    },
+    {
+      "identifier": "urn:air:www.andersonhernandesconsult.com.br:skills:discovery",
+      "displayName": "Anderson Hernandes Consultoria para Empresas Contábeis Agent Skills Index",
+      "type": "application/json",
+      "url": "https://www.andersonhernandesconsult.com.br/.well-known/agent-skills/index.json",
+      "representativeQueries": [
+        "Skills verificadas de www.andersonhernandesconsult.com.br"
+      ]
+    }
+  ]
+}

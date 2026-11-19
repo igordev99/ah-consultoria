@@ -1,0 +1,44 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.andersonhernandesconsult.com.br/api/contact",
+      "service-desc": [
+        {
+          "href": "https://www.andersonhernandesconsult.com.br/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.andersonhernandesconsult.com.br/llms.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://www.andersonhernandesconsult.com.br/auth.md",
+          "type": "text/markdown"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://www.andersonhernandesconsult.com.br/.well-known/ai-catalog.json",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.andersonhernandesconsult.com.br/api/mcp",
+      "service-desc": [
+        {
+          "href": "https://www.andersonhernandesconsult.com.br/.well-known/mcp/server-card.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.andersonhernandesconsult.com.br/llms-full.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}
